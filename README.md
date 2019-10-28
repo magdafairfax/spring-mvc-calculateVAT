@@ -1,2 +1,2 @@
 "# spring-servlet-calculateVAT" 
-Returns vat after it takes gross amd vatRate as input parameters.
+Returns vat after it takes gross amd vatRate as input parameters. Implemented using Spring mvc.
