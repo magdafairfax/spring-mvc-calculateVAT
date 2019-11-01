@@ -105,23 +105,14 @@
     </dependencies>
 
     <build>
-        <finalName>vat-calculator-service</finalName>
+        <finalName>calculate-vat</finalName>
         <plugins>
             <plugin>
-                <configuration>
-                    <executable>true</executable>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
     </build>
 
 </project>

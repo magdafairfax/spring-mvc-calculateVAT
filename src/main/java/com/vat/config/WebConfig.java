@@ -17,7 +17,7 @@ public class WebConfig implements WebMvcConfigurer {
     public ViewResolver viewResolver() {
         final InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setViewClass(JstlView.class);
-        bean.setPrefix("/WEB-INF/jsp/");
+        bean.setPrefix("WEB-INF/jsp/");
         bean.setSuffix(".jsp");
         bean.setOrder(0);
         return bean;
@@ -37,7 +37,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
-                .addResourceHandler("/jsp/**", "/css/**")
-                .addResourceLocations("/jsp/", "/css/");
+                .addResourceHandler("/jsp/**", "/resources/**")
+                .addResourceLocations("/jsp/", "/resources/");
     }
 }
