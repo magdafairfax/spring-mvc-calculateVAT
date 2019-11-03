@@ -7,6 +7,6 @@ public class VatService {
 
 
     public Double calculateVAT(Double gross, Double vatRate) {
-        return gross / (1 + (1 / vatRate));
+        return gross / (1 + (1 / vatRate)) ;
     }
 }
