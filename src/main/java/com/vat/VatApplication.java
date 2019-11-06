@@ -7,15 +7,10 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class VatApplication extends SpringBootServletInitializer {
+public class VatApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(VatApplication.class, args);
-    }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(VatApplication.class);
     }
 
 }
