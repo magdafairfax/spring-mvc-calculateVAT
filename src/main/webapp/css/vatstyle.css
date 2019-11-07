@@ -35,7 +35,7 @@ body {
 #container input[type="tel"],
 #container input[type="url"],
 #container textarea,
-#container button[type="submit"] {
+#container button {
     font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -74,6 +74,7 @@ fieldset {
 #container input[type="url"],
 #container textarea {
     width: 100%;
+    height: 20px;
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
@@ -97,25 +98,25 @@ fieldset {
     resize: none;
 }
 
-#container button[type="submit"] {
+#container button {
     cursor: pointer;
     width: 100%;
     border: none;
     background: #4CAF50;
-    color: #FFF;
-    margin: 0 0 5px;
+    color: #000000;
+    margin: 0 0 15px;
     padding: 10px;
     font-size: 25px;
 }
 
-#container button[type="submit"]:hover {
+#container button:hover {
     background: #43A047;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
-#container button[type="submit"]:active {
+#container button:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -144,8 +145,6 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
-
-
 
 .errorblock {
     color: #ff333d;

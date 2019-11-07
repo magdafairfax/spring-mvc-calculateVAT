@@ -14,7 +14,9 @@ public class VatController {
     @Autowired
     VatService vatService;
     @RequestMapping(value = "/calculateVat", method = RequestMethod.POST)
-    public ModelAndView calculateVat(ModelMap model, @RequestParam(value = "gross", required = false) String gross, @RequestParam (value ="vatRate", required = false) String vatRate ) {
+    public ModelAndView calculateVat(ModelMap model,
+                                     @RequestParam(value = "gross", required = false) String gross,
+                                     @RequestParam (value ="vatRate", required = false) String vatRate ) {
 
         ModelAndView mv = new ModelAndView();
         mv.setViewName("calculateVat");
